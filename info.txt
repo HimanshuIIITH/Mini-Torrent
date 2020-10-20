@@ -1,0 +1,13 @@
+commands to run:
+
+1. g++ tracker_test.cpp -o t sync.cpp -pthread
+2. g++ peer_final.cpp  -pthread
+3. ./a.out 127.0.0.1 5053(for peer) 
+
+Basic info:
+1. there is a race condition at admin while request to join group for authentication
+and request thread always win there so while before pressing 1 or 2 press
+comething then q now we are ready to take input as 1 0r 2(1 for accepting and 2 for rejceting)
+
+2. you can give your own indexes in starting of main in piece_info vector and corresponding
+piecewise file can be placed using chunk_sender and chunk_receiver program.
